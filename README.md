@@ -41,4 +41,4 @@ curl -i http://localhost:5000/
 
 ## Site no GitHub Pages
 
-A documentação estática do projeto é publicada em <https://juniomatias01.github.io/api-chamados/> pela esteira do GitHub Actions. O Pages não hospeda o servidor Flask; para acessar a API, execute-a localmente ou em um serviço compatível com Python.
+O repositório inclui uma página estática de documentação em `site/` e a esteira `.github/workflows/pages.yml`, preparada para publicá-la quando uma execução concluir com sucesso. O domínio personalizado configurado no repositório é `amessage.me`, com o caminho `/api-chamados/`. O GitHub Pages publica arquivos estáticos e não executa o servidor Flask; para acessar a API, inicie-a localmente ou em um serviço compatível com Python.
