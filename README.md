@@ -1,4 +1,4 @@
-﻿# API de chamados de suporte
+# API de chamados de suporte
 
 **Estudante:** José Junio de Souza Matias  
 **Matrícula:** 2025014028
@@ -38,3 +38,7 @@ Também é possível conferir pelo terminal:
 ```bash
 curl -i http://localhost:5000/
 ```
+
+## Site no GitHub Pages
+
+A documentação estática do projeto é publicada em <https://juniomatias01.github.io/api-chamados/> pela esteira do GitHub Actions. O Pages não hospeda o servidor Flask; para acessar a API, execute-a localmente ou em um serviço compatível com Python.
