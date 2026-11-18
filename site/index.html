@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Documentação da API inicial de chamados de suporte desenvolvida com Flask.">
+  <meta name="description" content="Exemplo da API de chamados de suporte em Flask.">
   <title>API de chamados de suporte</title>
   <style>
     :root { color-scheme: light; --ink: #172033; --muted: #526078; --accent: #155eef; --surface: #fff; --line: #dbe3ef; }
@@ -16,6 +16,7 @@
     h1 { margin: 8px 0 12px; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.1; }
     h2 { margin-top: 0; font-size: 1.35rem; }
     p { color: var(--muted); }
+    a { color: var(--accent); }
     code, pre { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     pre { overflow-x: auto; padding: 18px; border-radius: 10px; background: #101828; color: #d1e9ff; }
     .note { padding: 14px 16px; border-left: 4px solid var(--accent); background: #eff6ff; color: #344054; }
@@ -26,30 +27,32 @@
 <body>
   <main>
     <header>
-      <p class="eyebrow">Projeto acadêmico · ADS0021</p>
+      <p class="eyebrow">Projeto acad&ecirc;mico &middot; ADS0021</p>
       <h1>API de chamados de suporte</h1>
-      <p>Estrutura inicial de uma API desenvolvida com Python e Flask.</p>
+      <p>Exemplo da resposta JSON da rota inicial da API desenvolvida com Python e Flask.</p>
     </header>
 
-    <section aria-labelledby="rota">
-      <h2 id="rota">Rota inicial</h2>
-      <p><code>GET /</code> responde com status HTTP <strong>200</strong> e conteúdo JSON:</p>
+    <section aria-labelledby="endpoint">
+      <h2 id="endpoint">Endpoint JSON no GitHub Pages</h2>
+      <p><strong>M&eacute;todo:</strong> <code>GET</code></p>
+      <p><strong>URL:</strong> <a href="./api.json"><code>./api.json</code></a></p>
+      <p>O arquivo retorna status HTTP <strong>200</strong>, com <code>Content-Type: application/json</code> e este corpo:</p>
       <pre><code>{
   "mensagem": "API de chamados em funcionamento"
 }</code></pre>
-      <p class="note">Esta página do GitHub Pages é documentação estática. O Pages não executa o servidor Flask. Para acessar a API, inicie-a localmente ou em um serviço que suporte aplicações Python.</p>
+      <p class="note">Este endpoint &eacute; um arquivo JSON est&aacute;tico publicado pelo GitHub Pages para demonstrar a resposta. A rota Flask real est&aacute; em <code>app.py</code>; o Pages n&atilde;o executa o servidor Python.</p>
     </section>
 
-    <section aria-labelledby="execucao">
-      <h2 id="execucao">Executar a API</h2>
+    <section aria-labelledby="local">
+      <h2 id="local">Executar a API Flask</h2>
       <ol>
-        <li>Instale as dependências com <code>uv sync --locked</code>.</li>
+        <li>Instale as depend&ecirc;ncias com <code>uv sync --locked</code>.</li>
         <li>Inicie com <code>uv run flask --app app run --host=0.0.0.0 --port=5000</code>.</li>
-        <li>Acesse <code>http://localhost:5000/</code>.</li>
+        <li>Acesse <code>http://localhost:5000/</code> para chamar a rota Flask.</li>
       </ol>
     </section>
 
-    <footer>José Junio de Souza Matias · Matrícula 2025014028</footer>
+    <footer>Jos&eacute; Junio de Souza Matias &middot; Matr&iacute;cula 2025014028</footer>
   </main>
 </body>
 </html>
